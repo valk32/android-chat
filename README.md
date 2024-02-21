@@ -2,7 +2,7 @@
 ![HeaderImage](github_images/header.png)
 
 ## Introduction
-This is a demo application built with the goal to create a fun and challenging application based on the MVVM architectural pattern.111111
+This is a demo application built with the goal to create a fun and challenging application based on the MVVM architectural pattern.1111111
 
 See below for more information.
 
