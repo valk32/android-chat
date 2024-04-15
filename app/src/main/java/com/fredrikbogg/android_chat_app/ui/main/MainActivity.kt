@@ -24,7 +24,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainToolbar: Toolbar
     private lateinit var notificationsBadge: BadgeDrawable
     private val viewModel: MainViewModel by viewModels()
-
+private val viewModel: MainViewModel by viewModels()
+    
+    private val navController by lazy { findNavController(R.id.nav_host_fragment) }
+    private val notificationsBadge by lazy {
+        findViewById<BottomNavigationView>(R.id.nav_view)
+            .getOrCreateBadge(R.id.navigation_notifications).apply { isVisible = false }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
